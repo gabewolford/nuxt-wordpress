@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Spaghetti Regular";
+  src: url("~/assets/fonts/spaghetti-regular.otf");
+}
+
+@font-face {
+  font-family: "Spaghetti Regular";
+  src: url("~/assets/fonts/spaghetti-regular.woff");
+}
+
+@font-face {
+  font-family: "Spaghetti Regular";
+  src: url("~/assets/fonts/spaghetti-regular.woff2");
+}
+
+body {
+  font-family: "Spaghetti Regular", sans-serif;
+  color: #161a50;
+  background-color: #e1e2ef;
+  min-height: 100dvh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
