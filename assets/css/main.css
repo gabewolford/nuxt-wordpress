@@ -19,8 +19,8 @@
 
 body {
   font-family: "Spaghetti Regular", sans-serif;
-  color: #161a50;
-  background-color: #e1e2ef;
+  color: #000000;
+  background-color: #ffffff;
   min-height: 100dvh;
   min-width: 100%;
   display: flex;
