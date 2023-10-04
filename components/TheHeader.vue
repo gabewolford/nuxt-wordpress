@@ -1,28 +1,17 @@
-<script>
-export default {
-  data() {
-    return {
-      isMobileMenuOpen: false,
-    };
-  },
-  watch: {
-    isMobileMenuOpen(newValue) {
-      this.toggleBodyScroll(newValue);
-    },
-  },
-  methods: {
-    toggleMobileMenu() {
-      this.isMobileMenuOpen = !this.isMobileMenuOpen;
-    },
-    toggleBodyScroll(isOpen) {
-      if (isOpen) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
-    },
-  },
+<script setup>
+import { ref, watch } from "vue";
+
+const isMobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
 };
+
+const toggleBodyScroll = (isOpen) => {
+  document.body.style.overflow = isOpen ? "hidden" : "auto";
+};
+
+watch(isMobileMenuOpen, toggleBodyScroll);
 </script>
 
 <template>
@@ -36,14 +25,12 @@ export default {
         />
       </NuxtLink>
 
-      <!-- Mobile menu button (hidden when menu is open) -->
       <div v-if="!isMobileMenuOpen" class="md:hidden">
         <button @click="toggleMobileMenu">
           <img src="/images/menu-icon.svg" alt="Menu" />
         </button>
       </div>
 
-      <!-- Close button (hidden when menu is closed) -->
       <button
         v-if="isMobileMenuOpen"
         @click="toggleMobileMenu"
@@ -52,7 +39,6 @@ export default {
         <img src="/images/close-icon.svg" alt="Close" class="" />
       </button>
 
-      <!-- Mobile navigation links (full-screen overlay) -->
       <div
         v-if="isMobileMenuOpen"
         class="md:hidden fixed inset-0 bg-[#000000] bg-opacity-80 z-40"
@@ -60,7 +46,6 @@ export default {
         <div
           class="flex flex-col h-full justify-center space-y-12 items-center"
         >
-          <!-- Close button inside the mobile menu -->
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/"
@@ -89,12 +74,11 @@ export default {
             @click.native="toggleMobileMenu"
             to="/page4"
             class="text-white hover:text-[#3D67C3] text-xl"
-            >Page 4
-          </NuxtLink>
+            >Page 4</NuxtLink
+          >
         </div>
       </div>
 
-      <!-- Desktop navigation links -->
       <div class="hidden md:block flex-row space-x-10">
         <NuxtLink to="/page1" class="hover:text-[#3D67C3]">Page 1</NuxtLink>
         <NuxtLink to="/page2" class="hover:text-[#3D67C3]">Page 2</NuxtLink>
