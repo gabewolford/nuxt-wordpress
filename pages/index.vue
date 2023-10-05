@@ -1,3 +1,7 @@
 <template>
-  <h1>Home Page</h1>
+  <Hero
+    mainText="Hero text goes here. Whatever you want it to be."
+    secondaryText="Subtext goes here. Whater you want it to be."
+    buttonText="Click here"
+  />
 </template>

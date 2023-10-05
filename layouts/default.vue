@@ -24,7 +24,7 @@ onBeforeUnmount(() => {
 <template>
   <div>
     <TheHeader />
-    <main ref="mainContentRef" class="mx-auto my-auto flex flex-col px-6">
+    <main ref="mainContentRef" class="flex flex-col px-6">
       <slot />
     </main>
     <TheFooter ref="theFooterRef" />

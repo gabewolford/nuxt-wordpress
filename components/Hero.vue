@@ -1,13 +1,30 @@
+<script setup>
+defineProps({
+  mainText: {
+    type: String,
+    required: true,
+  },
+  secondaryText: {
+    type: String,
+    required: true,
+  },
+  buttonText: {
+    type: String,
+    required: true,
+  },
+});
+</script>
+
 <template>
   <section class="flex flex-col md:flex-row gap-4">
     <div class="flex flex-col md:w-2/5 gap-4 justify-center">
       <h1 class="text-6xl font-semibold">
-        Hero text goes here. Whatever you want it to be.
+        {{ mainText }}
       </h1>
       <h2 class="text-xl font-medium">
-        Subtext goes here. Whater you want it to be.
+        {{ secondaryText }}
       </h2>
-      <Button buttonText="Click here" />
+      <Button :buttonText="buttonText" />
     </div>
 
     <div class="flex md:w-3/5">
