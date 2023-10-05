@@ -35,14 +35,20 @@
           >Privacy Policy</NuxtLink
         >
         <NuxtLink to="/sitemap" class="hover:text-[#3D67C3]">Sitemap</NuxtLink>
+        <h6>© 2023 Company ABC</h6>
       </div>
 
       <!-- Tablets and desktop -->
-      <div class="hidden md:flex flex-row gap-6">
-        <NuxtLink to="/privacy-policy" class="hover:text-[#3D67C3]"
-          >Privacy Policy</NuxtLink
-        >
-        <NuxtLink to="/sitemap" class="hover:text-[#3D67C3]">Sitemap</NuxtLink>
+      <div class="hidden md:flex flex-col gap-2 items-end">
+        <div class="hidden md:flex flex-row gap-6">
+          <NuxtLink to="/privacy-policy" class="hover:text-[#3D67C3]"
+            >Privacy Policy</NuxtLink
+          >
+          <NuxtLink to="/sitemap" class="hover:text-[#3D67C3]"
+            >Sitemap</NuxtLink
+          >
+        </div>
+        <h6>© 2023 Company ABC</h6>
       </div>
     </div>
   </footer>

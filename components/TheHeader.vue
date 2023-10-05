@@ -49,43 +49,43 @@ watch(isMobileMenuOpen, toggleBodyScroll);
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="text-white hover:text-blue-500 text-xl"
             >Home</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/page1"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="text-white hover:text-blue-500 text-xl"
             >Page 1</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/page2"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="text-white hover:text-blue-500 text-xl"
             >Page 2</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/page3"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="text-white hover:text-blue-500 text-xl"
             >Page 3</NuxtLink
           >
           <NuxtLink
             @click.native="toggleMobileMenu"
             to="/page4"
-            class="text-white hover:text-[#3D67C3] text-xl"
+            class="text-white hover:text-blue-500 text-xl"
             >Page 4</NuxtLink
           >
         </div>
       </div>
 
       <div class="hidden md:block flex-row space-x-10">
-        <NuxtLink to="/page1" class="hover:text-[#3D67C3]">Page 1</NuxtLink>
-        <NuxtLink to="/page2" class="hover:text-[#3D67C3]">Page 2</NuxtLink>
-        <NuxtLink to="/page3" class="hover:text-[#3D67C3]">Page 3</NuxtLink>
-        <NuxtLink to="/page4" class="hover:text-[#B0BED4]">
+        <NuxtLink to="/page1" class="hover:text-blue-500">Page 1</NuxtLink>
+        <NuxtLink to="/page2" class="hover:text-blue-500">Page 2</NuxtLink>
+        <NuxtLink to="/page3" class="hover:text-blue-500">Page 3</NuxtLink>
+        <NuxtLink to="/page4" class="hover:text-blue-500">
           <div
-            class="inline-block px-4 py-2 text-white bg-[#2655BB] hover:bg-[#3D67C3]"
+            class="inline-block px-4 py-2 text-white bg-blue-500 hover:bg-blue-400"
           >
             Page 4
           </div>
