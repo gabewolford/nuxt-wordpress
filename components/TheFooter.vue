@@ -44,6 +44,9 @@
           <NuxtLink to="/privacy-policy" class="hover:text-[#3D67C3]"
             >Privacy Policy</NuxtLink
           >
+          <NuxtLink to="/accessibility" class="hover:text-[#3D67C3]"
+            >Accessibility</NuxtLink
+          >
           <NuxtLink to="/sitemap" class="hover:text-[#3D67C3]"
             >Sitemap</NuxtLink
           >

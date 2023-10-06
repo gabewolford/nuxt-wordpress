@@ -24,7 +24,9 @@ defineProps({
       <h2 class="text-xl font-medium">
         {{ secondaryText }}
       </h2>
-      <Button :buttonText="buttonText" />
+      <NuxtLink to="/page1">
+        <Button :buttonText="buttonText" />
+      </NuxtLink>
     </div>
 
     <div class="flex md:w-3/5">
