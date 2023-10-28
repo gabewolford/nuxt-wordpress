@@ -17,8 +17,33 @@
   src: url("~/assets/fonts/spaghetti-regular.woff2");
 }
 
+@font-face {
+  font-family: "Aften Screen";
+  src: url("~/assets/fonts/AftenScreenTrial.otf");
+}
+
+@font-face {
+  font-family: "Cera";
+  src: url("~/assets/fonts/Cera-Variable-Demo.woff");
+}
+
+@font-face {
+  font-family: "Cera";
+  src: url("~/assets/fonts/Cera-Variable-Demo.woff2");
+}
+
+@font-face {
+  font-family: "Easy Grotesk";
+  src: url("~/assets/fonts/Easy-Grotesk-Variable-Demo.woff");
+}
+
+@font-face {
+  font-family: "Easy Grotesk";
+  src: url("~/assets/fonts/Easy-Grotesk-Variable-Demo.woff2");
+}
+
 body {
-  font-family: "Spaghetti Regular", sans-serif;
+  font-family: "Cera", sans-serif;
   color: #000000;
   background-color: #ffffff;
   min-height: 100dvh;
@@ -26,4 +51,11 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }

@@ -8,4 +8,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      wordpressUrl: "http://nuxt-wordpress.local/graphql",
+    },
+  },
 });

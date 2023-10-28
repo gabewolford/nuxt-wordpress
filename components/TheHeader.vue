@@ -84,11 +84,7 @@ watch(isMobileMenuOpen, toggleBodyScroll);
         <NuxtLink to="/page2" class="hover:text-blue-500">Page 2</NuxtLink>
         <NuxtLink to="/page3" class="hover:text-blue-500">Page 3</NuxtLink>
         <NuxtLink to="/page4" class="hover:text-blue-500">
-          <div
-            class="inline-block px-4 py-2 text-white bg-blue-500 hover:bg-blue-400"
-          >
-            Page 4
-          </div>
+          <Button buttonText="Page 4" />
         </NuxtLink>
       </div>
     </nav>

@@ -4,7 +4,7 @@ defineProps({
     type: String,
     required: true,
   },
-  subheading: {
+  subHeading: {
     type: String,
     required: true,
   },
@@ -28,21 +28,21 @@ defineProps({
 </script>
 
 <template>
-  <section class="flex flex-col md:flex-row gap-4">
-    <div class="flex flex-col md:w-2/5 gap-4 justify-center">
-      <h1 class="text-6xl font-semibold">
+  <section class="flex flex-col md:flex-row gap-10">
+    <div class="flex md:w-1/2">
+      <img :src="imageUrl" :alt="altText" />
+    </div>
+
+    <div class="flex flex-col md:w-1/2 gap-4 justify-center px-8">
+      <h1 class="text-4xl font-semibold">
         {{ heading }}
       </h1>
       <h2 class="text-xl font-medium">
-        {{ subheading }}
+        {{ subHeading }}
       </h2>
       <NuxtLink :to="linkTo">
         <Button :buttonText="buttonText" />
       </NuxtLink>
-    </div>
-
-    <div class="flex md:w-3/5">
-      <img :src="imageUrl" :alt="altText" />
     </div>
   </section>
 </template>

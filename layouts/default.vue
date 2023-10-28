@@ -24,7 +24,10 @@ onBeforeUnmount(() => {
 <template>
   <div>
     <TheHeader />
-    <main ref="mainContentRef" class="flex flex-col px-6">
+    <main
+      ref="mainContentRef"
+      class="flex flex-col px-6 lg:max-w-[80vw] mx-auto lg:gap-24"
+    >
       <slot />
     </main>
     <TheFooter ref="theFooterRef" />
