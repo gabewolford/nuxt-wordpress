@@ -10,7 +10,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      wordpressUrl: "http://nuxt-wordpress.local/graphql",
+      // wordpressUrl: "http://nuxt-wordpress.local/graphql",
+      wordpressUrl: "https://nuxtwordpresss.wpenginepowered.com/graphql",
     },
   },
 });
